@@ -1,0 +1,291 @@
+export interface NilaiBudaya {
+  icon: string;
+  title: string;
+  desc: string;
+  color: string;
+  verified: boolean;
+  source?: {
+    title: string;
+    url: string;
+  };
+}
+
+export interface KonflikSejarah {
+  tahun: string;
+  judul: string;
+  icon: string;
+  deskripsi: string;
+  dampak: string[];
+  pembelajaran: string;
+  verified: boolean;
+  source: {
+    title: string;
+    url: string;
+  };
+}
+
+export interface Pernyataan {
+  type: "benar" | "salah";
+  text: string;
+  alasan: string;
+  source?: {
+    title: string;
+    url: string;
+  };
+}
+
+export interface Solusi {
+  icon: string;
+  label: string;
+}
+
+export interface Takeaway {
+  icon: string;
+  title: string;
+  points: string[];
+}
+
+export interface PesanInti {
+  title: string;
+  content: string;
+  highlight: string;
+  icon: string;
+}
+
+export interface FinalMessage {
+  title: string;
+  content: string;
+  tags: string[];
+  icon: string;
+}
+
+// Nilai-nilai Budaya Gresik (Berdasarkan Riset)
+export const nilaiBudayaData: NilaiBudaya[] = [
+  {
+    icon: "🙏",
+    title: "Religius",
+    desc: "Ketaatan beribadah dan menjalankan nilai-nilai agama dalam kehidupan sehari-hari, termasuk menghormati keberagaman keyakinan",
+    color: "from-teal/20 to-forest/20",
+    verified: true,
+    source: {
+      title: "UNISNU Jepara Journal",
+      url: "https://ejournal.unisnu.ac.id/j-asna/article/download/7474/pdf"
+    }
+  },
+  {
+    icon: "☮️",
+    title: "Toleransi & Multikulturalisme",
+    desc: "Menghormati perbedaan agama dan budaya, hidup harmonis dalam keberagaman sebagaimana diterapkan di sekolah-sekolah Gresik",
+    color: "from-forest/20 to-teal/20",
+    verified: true,
+    source: {
+      title: "UNISNU Jepara Journal",
+      url: "https://ejournal.unisnu.ac.id/j-asna/article/download/7474/pdf"
+    }
+  },
+  {
+    icon: "🎭",
+    title: "Pelestarian Budaya Lokal",
+    desc: "Menjaga warisan leluhur seperti budaya kercengan di Bawean sebagai sarana harmonisasi sosial masyarakat",
+    color: "from-beige/40 to-terracotta/20",
+    verified: true,
+    source: {
+      title: "Gubug Jurnal STITNU",
+      url: "https://jurnal.stitnualhikmah.ac.id/index.php/seling/article/view/119"
+    }
+  },
+  {
+    icon: "🤝",
+    title: "Dialog & Kerja Sama",
+    desc: "Membangun komunikasi aktif antar kelompok dan bekerja sama dalam menjaga kerukunan, seperti di Desa Pengalangan",
+    color: "from-terracotta/20 to-burnt/20",
+    verified: true,
+    source: {
+      title: "IDEAS/RePEc",
+      url: "https://ideas.repec.org/a/bcp/journl/v8y2024i7p3214-3220.html"
+    }
+  },
+  {
+    icon: "💪",
+    title: "Gotong Royong",
+    desc: "Semangat kebersamaan dan saling membantu antar warga masyarakat dalam berbagai kegiatan",
+    color: "from-navy/20 to-forest/20",
+    verified: false
+  },
+  {
+    icon: "🌊",
+    title: "Harmoni dengan Lingkungan",
+    desc: "Menjaga keseimbangan antara pembangunan dan pelestarian lingkungan pesisir serta tambak tradisional",
+    color: "from-teal/20 to-navy/20",
+    verified: false
+  },
+];
+
+// Konflik Sejarah yang Terdokumentasi di Gresik
+export const konflikSejarahData: KonflikSejarah[] = [
+  {
+    tahun: "1930-1960",
+    judul: "Konflik Sosial Keagamaan Permukaan",
+    icon: "⚔️",
+    deskripsi: "Konflik sosial keagamaan yang terjadi di Gresik pada masa ini dikategorikan sebagai konflik 'permukaan' dan tidak berakar sangat dalam, namun tetap memerlukan penanganan untuk menjaga kerukunan.",
+    dampak: [
+      "Ketegangan antar kelompok keagamaan",
+      "Memerlukan mediasi dan dialog antar tokoh agama",
+      "Pembelajaran tentang pentingnya komunikasi lintas keyakinan",
+      "Penguatan peran tokoh masyarakat dalam resolusi konflik"
+    ],
+    pembelajaran: "Pentingnya dialog antar umat beragama sejak dini dan peran tokoh masyarakat dalam menjaga kerukunan",
+    verified: true,
+    source: {
+      title: "CORE - Konflik Sosial dan Pemecahannya",
+      url: "https://core.ac.uk/download/pdf/268132828.pdf"
+    }
+  },
+  {
+    tahun: "1992-2006",
+    judul: "Resistensi Masyarakat terhadap Pembangunan SUTET",
+    icon: "⚡",
+    deskripsi: "Konflik agraria di Kelurahan Singosari, Gresik, antara masyarakat lokal dengan PT PLN terkait pembangunan Saluran Udara Tegangan Ekstra Tinggi (SUTET). Warga menolak karena isu hak lahan, dampak kesehatan, dan kompensasi yang tidak memadai.",
+    dampak: [
+      "Ketegangan antara warga dan perusahaan negara",
+      "Demonstrasi dan aksi protes berkelanjutan",
+      "Kekhawatiran dampak kesehatan jangka panjang",
+      "Persoalan ganti rugi dan hak atas tanah"
+    ],
+    pembelajaran: "Pentingnya musyawarah, transparansi, dan kompensasi yang adil dalam pembangunan infrastruktur besar",
+    verified: true,
+    source: {
+      title: "Journal UM - Resistensi Masyarakat Lokal",
+      url: "https://journal2.um.ac.id/index.php/JDS/article/view/55275"
+    }
+  },
+  {
+    tahun: "2000-an",
+    judul: "Transformasi Harmoni: Desa Pengalangan",
+    icon: "�️",
+    deskripsi: "Desa Pengalangan menjadi contoh sukses dalam membangun harmoni keberagaman antara Muslim dan Hindu. Melalui nilai toleransi, kerja sama, dan saling menghormati, masyarakat berhasil hidup berdampingan dengan damai.",
+    dampak: [
+      "Model keberagaman yang berhasil di Gresik",
+      "Dialog aktif antar kelompok agama",
+      "Kerja sama dalam kegiatan sosial dan ekonomi",
+      "Menginspirasi desa-desa lain untuk harmoni"
+    ],
+    pembelajaran: "Harmoni dibangun melalui internalisasi nilai toleransi, dialog berkelanjutan, dan kerja sama nyata",
+    verified: true,
+    source: {
+      title: "IDEAS/RePEc - Building Tolerant Muslim Society",
+      url: "https://ideas.repec.org/a/bcp/journl/v8y2024i7p3214-3220.html"
+    }
+  }
+];
+
+// Solusi Transformasi
+export const solusiData: Solusi[] = [
+  { icon: "🤝", label: "Dialog Aktif" },
+  { icon: "⚖️", label: "Keadilan Sosial" },
+  { icon: "🌱", label: "Kelestarian Lingkungan" },
+  { icon: "📚", label: "Pendidikan Toleransi" }
+];
+
+// Pernyataan Benar/Salah tentang Harmoni
+export const pernyataanData: Pernyataan[] = [
+  {
+    type: "benar",
+    text: "Harmoni dalam keberagaman sangat penting untuk menciptakan lingkungan kerja yang inklusif dan produktif.",
+    alasan: "Penelitian menunjukkan bahwa inklusivitas dalam masyarakat yang beragam mengarah pada lingkungan yang lebih produktif dan harmonis.",
+    source: {
+      title: "IDEAS/RePEc - Building Tolerant Muslim Society",
+      url: "https://ideas.repec.org/a/bcp/journl/v8y2024i7p3214-3220.html"
+    }
+  },
+  {
+    type: "salah",
+    text: "Keberagaman pekerjaan tidak berkontribusi pada penciptaan harmoni di lingkungan kerja.",
+    alasan: "Keberagaman pekerjaan justru berkontribusi positif terhadap harmoni. Penelitian membuktikan bahwa keberagaman membantu membangun keseimbangan dan saling menghormati dalam masyarakat.",
+    source: {
+      title: "IDEAS/RePEc - Building Tolerant Muslim Society",
+      url: "https://ideas.repec.org/a/bcp/journl/v8y2024i7p3214-3220.html"
+    }
+  },
+  {
+    type: "benar",
+    text: "Menerapkan nilai harmoni dalam keberagaman dapat membantu mengurangi konflik dan meningkatkan produktivitas di lingkungan masyarakat dan lingkungan kerja.",
+    alasan: "Studi kasus Desa Pengalangan menunjukkan bahwa internalisasi nilai harmoni dalam keberagaman terbukti mengurangi konflik dan meningkatkan kerja sama masyarakat.",
+    source: {
+      title: "IDEAS/RePEc - Building Tolerant Muslim Society",
+      url: "https://ideas.repec.org/a/bcp/journl/v8y2024i7p3214-3220.html"
+    }
+  },
+  {
+    type: "salah",
+    text: "Menciptakan harmoni dalam keberagaman merupakan tanggung jawab pimpinan di tempat kerja, bukan tanggung jawab karyawan.",
+    alasan: "Harmoni adalah tanggung jawab bersama seluruh anggota masyarakat. Penelitian membuktikan bahwa harmoni terbangun melalui partisipasi aktif semua pihak, bukan hanya pemimpin.",
+    source: {
+      title: "IDEAS/RePEc - Building Tolerant Muslim Society",
+      url: "https://ideas.repec.org/a/bcp/journl/v8y2024i7p3214-3220.html"
+    }
+  },
+  {
+    type: "salah",
+    text: "Toleransi dan harmoni dalam keberagaman adalah konsep yang sama dan dapat digunakan secara bergantian.",
+    alasan: "Toleransi dan harmoni adalah konsep berbeda. Penelitian menjelaskan bahwa toleransi adalah sikap menghormati perbedaan, sedangkan harmoni adalah kondisi keseimbangan yang dihasilkan dari berbagai faktor termasuk toleransi, kerja sama, dan saling memahami.",
+    source: {
+      title: "IDEAS/RePEc - Building Tolerant Muslim Society",
+      url: "https://ideas.repec.org/a/bcp/journl/v8y2024i7p3214-3220.html"
+    }
+  },
+];
+
+// Transformasi Message
+export const transformasiMessage = {
+  icon: "🕊️",
+  title: "Dari Konflik Menuju Harmoni",
+  content: "Melalui pembelajaran dari konflik-konflik tersebut, masyarakat Gresik kini membangun harmoni yang lebih kuat. Dialog antar kelompok, musyawarah mufakat, dan penerapan nilai-nilai budaya lokal menjadi kunci terciptanya Gresik yang damai dan sejahtera. Konflik bukan akhir, tetapi awal dari transformasi menuju masyarakat yang lebih baik."
+};
+
+// Pesan Inti
+export const pesanIntiData: PesanInti = {
+  title: "Pesan Inti: Tanggung Jawab Bersama",
+  content: "Harmoni dalam keberagaman adalah tanggung jawab bersama seluruh anggota masyarakat dan lingkungan kerja. Melalui penerapan nilai-nilai budaya Gresik—religius, gotong royong, kerja keras, pelestarian budaya, dan toleransi—kita dapat menciptakan lingkungan yang inklusif, mengurangi konflik, dan meningkatkan produktivitas.",
+  highlight: "Keberagaman adalah Kekuatan, Bukan Hambatan",
+  icon: "🤝"
+};
+
+// Key Takeaways
+export const takeawaysData: Takeaway[] = [
+  {
+    icon: "heart",
+    title: "Menghargai Keberagaman",
+    points: [
+      "Menghormati perbedaan budaya dan tradisi",
+      "Belajar dari kearifan lokal",
+      "Menjaga toleransi antar golongan"
+    ]
+  },
+  {
+    icon: "users",
+    title: "Gotong Royong",
+    points: [
+      "Bekerjasama dalam kegiatan sosial",
+      "Saling membantu sesama",
+      "Membangun kebersamaan"
+    ]
+  },
+  {
+    icon: "trending-up",
+    title: "Produktivitas",
+    points: [
+      "Menerapkan etos kerja yang baik",
+      "Berinovasi dan berkreasi",
+      "Berkontribusi untuk kemajuan"
+    ]
+  }
+];
+
+// Final Message
+export const finalMessageData: FinalMessage = {
+  title: "Mari Lestarikan Budaya Gresik",
+  content: "Budaya adalah identitas kita. Dengan menjaga dan melestarikan nilai-nilai luhur budaya Gresik, kita turut membangun generasi yang berkarakter, toleran, dan produktif. Mari bersama-sama menjadi bagian dari perubahan positif!",
+  tags: ["#BudayaGresik", "#KotaSantri", "#KotaIndustri", "#HarmoniKeberagaman"],
+  icon: "🌟"
+};
