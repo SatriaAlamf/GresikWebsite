@@ -124,73 +124,6 @@ netlify deploy --prod
 Atau push ke repository dan biarkan Netlify auto-deploy dari GitHub/GitLab.
 
 ---
-
-## 📁 Struktur Project
-
-```
-ngerti_gresik.id/
-├── 📂 app/                          # Next.js App Router
-│   ├── globals.css                 # Global styles
-│   ├── layout.tsx                  # Root layout
-│   ├── page.tsx                    # Homepage
-│   ├── 📂 adat-istiadat/           # Halaman adat istiadat
-│   ├── 📂 kesenian/                # Halaman kesenian
-│   ├── 📂 kesimpulan/              # Halaman kesimpulan
-│   ├── 📂 makanan/                 # Halaman kuliner
-│   ├── 📂 pakaian-adat/            # Halaman pakaian adat
-│   ├── 📂 pekerjaan/               # Halaman mata pencaharian
-│   └── 📂 kebiasaan-masyarakat/    # Halaman kebiasaan masyarakat
-│
-├── 📂 components/                   # React Components
-│   ├── 📂 animations/              # Animation components
-│   │   ├── CounterAnimation.tsx
-│   │   ├── MagneticButton.tsx
-│   │   └── RevealOnScroll.tsx
-│   ├── 📂 charts/                  # Chart components
-│   │   ├── BarChart.tsx
-│   │   ├── DonutChart.tsx
-│   │   └── LineChart.tsx
-│   ├── 📂 layouts/                 # Layout components
-│   │   ├── Footer.tsx
-│   │   └── Navbar.tsx
-│   ├── 📂 sections/                # Section components
-│   │   ├── DualIdentitySection.tsx
-│   │   ├── ExploreSection.tsx
-│   │   └── HeroSection.tsx
-│   └── 📂 ui/                      # UI components
-│       ├── BackToTop.tsx
-│       ├── Badge.tsx
-│       ├── Button.tsx
-│       ├── Card.tsx
-│       ├── Container.tsx
-│       └── Section.tsx
-│
-├── 📂 data/                         # Data & Content
-│   ├── adat.ts                     # Data adat istiadat
-│   ├── kesenian.ts                 # Data kesenian
-│   ├── makanan.ts                  # Data kuliner
-│   ├── nilai.ts                    # Data nilai budaya
-│   ├── pakaian.ts                  # Data pakaian adat
-│   └── pekerjaan.ts                # Data pekerjaan
-│
-├── 📂 lib/                          # Utilities
-│   ├── animations.ts               # Animation utilities
-│   ├── constants.ts                # Constants
-│   └── utils.ts                    # Helper functions
-│
-├── 📂 public/                       # Static assets
-│   ├── 📂 images/                  # Images
-│   └── 📂 videos/                  # Videos
-│
-├── next.config.ts                  # Next.js configuration
-├── tailwind.config.ts              # Tailwind configuration
-├── tsconfig.json                   # TypeScript configuration
-├── netlify.toml                    # Netlify configuration
-└── package.json                    # Dependencies
-```
-
----
-
 ## 🎨 Custom Color Palette
 
 Website ini menggunakan palet warna kustom yang terinspirasi dari budaya Gresik:
@@ -239,32 +172,17 @@ Kontribusi selalu diterima! Jika Anda ingin berkontribusi:
 4. Push ke branch (`git push origin feature/AmazingFeature`)
 5. Buat Pull Request
 
----
-
-## 📝 Lisensi
-
-Project ini dibuat untuk keperluan edukasi (PPKN Project Bab 3).
-
----
 
 ## 👥 Tim Pengembang
 
-Dikembangkan dengan ❤️ oleh mahasiswa untuk pelestarian budaya Gresik.
+Dikembangkan dengan ❤️ oleh siswa SMKN 2 BUDURAN untuk pelestarian budaya Gresik.
 
 ---
 
 ## 📞 Kontak & Support
 
 - 🌐 **Website:** [ngerti-gresik.netlify.app](https://ngerti-gresik.netlify.app)
-- 📧 **Email:** [your-email@example.com]
-- 📱 **Issues:** [GitHub Issues](https://github.com/yourusername/ngerti_gresik.id/issues)
+- 📧 **Email:** [satria26vs@gmmail.com]
 
 ---
 
-<div align="center">
-
-### ⭐ Jangan lupa beri bintang jika project ini bermanfaat!
-
-**Made with 💙 for Gresik**
-
-</div>
